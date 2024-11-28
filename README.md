@@ -1,5 +1,8 @@
 # tec1 controlling a Quena
 
+![image](https://github.com/user-attachments/assets/38b844f3-d70e-4919-9b13-39492e1f3e92)
+
+
 The **quena** is traditionally tuned to the **pentatonic scale**, but it can also be played in **diatonic scales** depending on the positioning of the fingers and the breath control. In Andean music, the most commonly used scales are:
 
 - **Major scale**: Frequently used in joyful or celebratory pieces.
