@@ -10,7 +10,7 @@ The **quena** is traditionally tuned to the **pentatonic scale**, but it can als
 - **Pentatonic scale**: A staple for traditional Andean melodies, creating a distinct, ethereal sound.
 
 
-## classic pieces and traditional music based on **pentatonic scale**:
+# classic pieces and traditional music based on **pentatonic scale**:
 
 ### Traditional Andean and South American Music:
 1. **"El Cóndor Pasa"** – Traditional Peruvian melody (popularized worldwide by Simon & Garfunkel).
@@ -40,7 +40,7 @@ The **quena** is traditionally tuned to the **pentatonic scale**, but it can als
 15. **Pink Floyd – "Wish You Were Here"** – Opening guitar solo heavily uses pentatonic scale.
 
 
-## An **extreme composition for the quena** with a **sci-fi UFO vibe** 
+# An **extreme composition for the quena** with a **sci-fi UFO vibe** 
 - would involve blending its natural, haunting timbre with experimental techniques and electronic elements.
 - Here's how you could design such a composition:
 
@@ -162,7 +162,8 @@ Here is a **conceptual music sheet** for the quena in **"Arrival of the Andean S
 
 ---
 
-I'll help create a MIDI representation of this atmospheric Andean piece. Due to the experimental nature of the piece, I'll need to approximate some of the more exotic effects (like breath sounds and glissandos) using standard MIDI techniques.
+# MIDI version
+Create a MIDI representation of this atmospheric Andean piece. Due to the experimental nature of the piece, I'll need to approximate some of the more exotic effects (like breath sounds and glissandos) using standard MIDI techniques.
 
 `ASC.midi`
 
@@ -213,12 +214,56 @@ For a fully accurate representation, you'd need to perform this on an actual que
 - **Synth Swells:** Mark **"Synth in"** at the beginning, with rising and falling dynamics to simulate distant cosmic energy.
 - **Distortion:** Annotate **"Distort Quena"** during the climax for live electronic processing.
 
-Would you like me to create a MIDI file or a visual representation of this music sheet?
+## Score
+
+![image](https://github.com/user-attachments/assets/da80b38c-23a0-4c30-9602-72a7a7ebbdba)
+
+visual score that combines traditional musical notation with experimental graphics to represent the unique elements of the piece. 
+The score is divided into four main sections:
+
+1. Opening: Ethereal Whispers
+   - Wavy lines represent breathy sounds
+   - Glissando markings show pitch slides
+   - Sparse notation indicates free improvisation
+
+2. Middle: UFO Maneuvers
+   - Arpeggiated patterns
+   - Burst symbols for UFO effects
+   - Direction arrows for pitch bending
+
+3. Climax: Battle of Sounds
+   - Dense notation showing rapid runs
+   - Flutter tongue markings
+   - Overlapping lines for electronic effects
+
+4. Ending: Cosmic Silence
+   - Long notes with fade markings
+   - Space between notes showing silence
+   - Gradual diminuendo indicated by thinning lines
+
+Special Features:
+- Clear tempo and dynamic markings
+- Legend explaining special symbols
+- Staff lines for traditional reference
+- Experimental notation for extended techniques
+
+The score combines:
+1. Traditional elements:
+   - Five-line staff
+   - Standard tempo markings
+   - Dynamic indicators
+
+2. Experimental elements:
+   - Graphic notation for effects
+   - Special symbols for extended techniques
+   - Visual representations of electronic elements
 
 
 
 
-## MIDI Quena
+
+
+# MIDI Quena
 
 The traditional **quena** is an acoustic instrument and does not inherently support **MIDI control**, but there are ways to bridge the gap between the quena and MIDI technology for a futuristic setup:
 
@@ -259,7 +304,7 @@ While not widely available, custom-built MIDI quena-style flutes have been creat
 
 ---
 
-## Akai EWI
+# Akai EWI
 - https://djcity.com.au/product/akai-ewi5000-wireless-electronic-wind-instrument/
 
 ![image](https://github.com/user-attachments/assets/4661feda-c41e-43ac-93ca-1617c6094e7f)
