@@ -1,0 +1,116 @@
+from midiutil import MIDIFile
+import random
+
+def create_andean_starchild():
+    # Initialize MIDI file with 2 tracks (quena + effects)
+    midi = MIDIFile(2)
+    track_quena = 0
+    track_effects = 1
+    
+    # Setup tracks
+    midi.addTrackName(track_quena, 0, "Quena")
+    midi.addTrackName(track_effects, 0, "Electronic Effects")
+    
+    # Set woodwind instrument for quena (74 = Flute)
+    midi.addProgramChange(track_quena, 0, 0, 74)
+    # Set synth pad for effects (91 = Pad 4 Choir)
+    midi.addProgramChange(track_effects, 0, 0, 91)
+    
+    current_time = 0
+    
+    # Opening Section - Ethereal Whispers
+    tempo = 50
+    midi.addTempo(track_quena, current_time, tempo)
+    
+    # C minor pentatonic scale
+    pentatonic = [60, 63, 65, 67, 70]  # C, Eb, F, G, Bb
+    
+    # Create breathy effects using very soft velocity and pitch bends
+    for _ in range(8):
+        note = random.choice(pentatonic)
+        duration = random.uniform(1.0, 2.0)
+        velocity = random.randint(30, 45)  # Very soft
+        midi.addNote(track_quena, 0, note, current_time, duration, velocity)
+        
+        # Add pitch bend for wind effect
+        for i in range(10):
+            bend_time = current_time + (i * duration / 10)
+            bend_amount = random.randint(-200, 200)
+            midi.addPitchWheelEvent(track_quena, 0, bend_time, bend_amount)
+            
+        current_time += duration
+
+    # Middle Section - UFO Maneuvers
+    current_time += 2  # Add pause between sections
+    tempo = 80
+    midi.addTempo(track_quena, current_time, tempo)
+    
+    # Whole tone scale
+    whole_tone = [60, 62, 64, 66, 68, 70]  # C, D, E, F#, G#, A#
+    
+    # Create arpeggios with electronic effects
+    for _ in range(6):
+        for note in whole_tone:
+            duration = 0.5
+            velocity = random.randint(60, 80)
+            midi.addNote(track_quena, 0, note, current_time, duration, velocity)
+            
+            # Add electronic sweep effect
+            midi.addNote(track_effects, 0, note + 12, current_time, duration * 2, 40)
+            
+            current_time += duration
+        
+        # Add sudden accent note
+        accent_note = random.choice(whole_tone)
+        midi.addNote(track_quena, 0, accent_note, current_time, 0.25, 100)
+        current_time += 0.5
+
+    # Climax Section - Battle
+    current_time += 1
+    tempo = 120
+    midi.addTempo(track_quena, current_time, tempo)
+    
+    # Diminished scale
+    diminished = [60, 62, 63, 65, 66, 68, 69, 71]  # C, D, Eb, F, F#, Ab, A, B
+    
+    # Create intense runs with electronic effects
+    for _ in range(4):
+        # Ascending run
+        for note in diminished:
+            duration = 0.25
+            velocity = random.randint(90, 110)
+            midi.addNote(track_quena, 0, note, current_time, duration, velocity)
+            
+            # Add distortion effect
+            midi.addNote(track_effects, 0, note - 12, current_time, duration, 80)
+            
+            current_time += duration
+        
+        # Descending run
+        for note in reversed(diminished):
+            duration = 0.25
+            velocity = random.randint(90, 110)
+            midi.addNote(track_quena, 0, note, current_time, duration, velocity)
+            current_time += duration
+
+    # Ending Section - Cosmic Silence
+    current_time += 2
+    tempo = 40
+    midi.addTempo(track_quena, current_time, tempo)
+    
+    # Final echoing notes
+    for note in [60, 70, 65, 60]:  # C, Bb, F, C
+        # Create crescendo-diminuendo effect
+        for velocity in [30, 40, 50, 60, 50, 40, 30, 20]:
+            duration = 1.0
+            midi.addNote(track_quena, 0, note, current_time, duration, velocity)
+            current_time += duration
+        current_time += 1  # Add rest
+    
+    # Write the MIDI file
+    with open("andean_starchild.mid", "wb") as midi_file:
+        midi.writeFile(midi_file)
+
+# Generate the piece
+create_andean_starchild()
+print("MIDI file 'andean_starchild.mid' has been created.")
